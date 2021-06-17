@@ -11,7 +11,13 @@ public class SumTwoNumbers {
    * @return The result of a + b
    */
   public static Integer sum(Integer a, Integer b) {
-    //TODO: Implement me
-    return null;
+    return ifNotNull(a) + ifNotNull(b);
+  }
+
+  private Integer ifNotNull(Integer x){
+    if (x != null) {
+      return x;
+    }
+    return 0;
   }
 }
