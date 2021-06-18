@@ -14,7 +14,7 @@ public class SumTwoNumbers {
     return ifNotNull(a) + ifNotNull(b);
   }
 
-  private Integer ifNotNull(Integer x){
+  private static Integer ifNotNull(Integer x){
     if (x != null) {
       return x;
     }

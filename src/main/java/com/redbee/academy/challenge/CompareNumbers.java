@@ -12,7 +12,18 @@ public class CompareNumbers {
    * @return The max of a, b and c
    */
   public static Integer max(Integer a, Integer b, Integer c) {
-    //TODO: Implement me
-    return null;
+
+    return notNullMax(notNullMax(a,b),c);
+  }
+
+  private static Integer notNullMax(Integer a, Integer b){
+    if (a != null && b != null) {
+      return Math.max(a,b);
+    }else if(b != null){
+      return b;
+    }else if (a != null) {
+      return a;
+    }
+    return 0;
   }
 }
